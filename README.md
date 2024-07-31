@@ -1,4 +1,30 @@
-# Datamining
+# Wortanalyse der gemeinsamen Ministerialblätter
+
+# Ziele des README
+ - Zielsetzung: Was wollen wir vom README? Ergebnisse? Beschreibung der Methodik? Anleitung?
+ - Nebenziele: Ansprechende Darstellung, (implizite) Betonung der Fähigkeiten
+
+# Strukturierung
+ - Kurzbeschreibung des Projekts
+ - Ergebnisse (evtl. vor den Methoden?)
+ - Ausführlicheres Eingehen auf verwendete Methoden
+ - Analyse/Kommentare zu Problemen
+ - Anleitung für eigene Ausführung des Codes
+
+# Ideen für Aufhübschung/Bilder
+ - Wordclouds
+ - Topic Clouds
+ - Spurious Correlations
+ - Weitere Funktionalität des Dashboards
+
+## Kurzbeschreibung des Projekts
+ Das Projekt ist ein Lernprojekt, dessen Inhalt die Wortanalyse von ca. 2700 Ausgaben des *gemeinsamen Ministerialblattes* ist. Die *gemeinsamen Ministerialblätter* sind die seit 1950 von der Bundesregierung Deutschlands herausgegebenen Verwaltungsanweisungen - diese wurden auf der Website fragdenstaat.de als .pdf veröffentlicht.
+
+ Teilaspekte, mit denen wir uns auseinandergesetzt haben, sind:
+- Beschaffung, Bereinigung und Verarbeitung der Textdaten
+- Natural Language Processing
+- statistische Methoden und Topic Modelling
+- Darstellung der Ergebnisse mit Word Clouds, Graphen und Tabellen in einem Dashboard
 
 ## Gemeinsames Ministerialblatt von www.fragdenstaat.de
 ### Vorwort
