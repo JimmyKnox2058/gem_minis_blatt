@@ -4,5 +4,5 @@
 data/data/list_doc.json
 data/data/docs.json
 data/pickle_jar/publication_df.pickle
-data/pickle_jar/topic_clouds.pickle
-data/pickle_jar/word_clouds.pickle
+
+/data/__pycache__
