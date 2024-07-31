@@ -1,0 +1,10 @@
+requests
+pandas
+numpy
+pickle
+py-pdf-parser
+wordcloud
+requests
+tqdm
+dash
+scikit-learn

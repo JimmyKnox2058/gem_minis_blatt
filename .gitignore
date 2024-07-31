@@ -6,3 +6,9 @@ data/data/docs.json
 data/pickle_jar/publication_df.pickle
 
 /data/__pycache__
+pages/__pycache__/home.cpython-312.pyc
+pages/__pycache__/spurious_correlations.cpython-312.pyc
+pages/__pycache__/topic_clouds.cpython-312.pyc
+pages/__pycache__/word_clouds.cpython-312.pyc
+pages/__pycache__/words.cpython-312.pyc
+pages/__pycache__/yearlyTotal.cpython-312.pyc
