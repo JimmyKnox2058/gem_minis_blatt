@@ -3,6 +3,7 @@
 # Ziele des README
  - Zielsetzung: Was wollen wir vom README? Ergebnisse? Beschreibung der Methodik? Anleitung?
  - Nebenziele: Ansprechende Darstellung, (implizite) Betonung der Fähigkeiten
+![Screenshot (33)](https://github.com/user-attachments/assets/60db6cea-051f-4f54-bd8b-84d9522c297b)
 
 # Strukturierung
  - Kurzbeschreibung des Projekts
