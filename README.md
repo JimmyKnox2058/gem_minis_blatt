@@ -1,19 +1,10 @@
 # Wortanalyse der gemeinsamen Ministerialblätter
 
-# Ziele des README
- - Zielsetzung: Was wollen wir vom README? Ergebnisse? Beschreibung der Methodik? Anleitung?
- - Nebenziele: Ansprechende Darstellung, (implizite) Betonung der Fähigkeiten
 ![Screenshot (33)](https://github.com/user-attachments/assets/60db6cea-051f-4f54-bd8b-84d9522c297b)
 
 # Strukturierung
- - Kurzbeschreibung des Projekts
- - Ergebnisse (evtl. vor den Methoden?)
- - Ausführlicheres Eingehen auf verwendete Methoden
- - Analyse/Kommentare zu Problemen
  - Anleitung für eigene Ausführung des Codes
-![BW_Metzger](https://github.com/user-attachments/assets/06ad5ad5-f2ee-4bb6-a2e9-58307aa2ffad)
-![Studentenfutter](https://github.com/user-attachments/assets/27f3e99a-da77-4775-b4f2-24f8f2b859c9)
-
+   
 # Ideen für Aufhübschung/Bilder
  - Wordclouds
  - Topic Clouds
@@ -35,6 +26,8 @@
  - Ermittlung verwandter Begriffe durch Topic Modelling und Zusammenfassung verschiedener Themen in Word Clouds (Bild TODO)
  - Ermittlung der Worthäufigkeiten nach Jahr und Darstellung des Verlaufs in Diagrammen
  - Findung von 'Spurious Correlations', als zufälligerweise stark korrelierter Begriffe, die keinen kausalen Zusammenhang erkennen lassen 
+![BW_Metzger](https://github.com/user-attachments/assets/06ad5ad5-f2ee-4bb6-a2e9-58307aa2ffad)
+![Studentenfutter](https://github.com/user-attachments/assets/27f3e99a-da77-4775-b4f2-24f8f2b859c9)
  - Darstellung der Ergebnisse in einem simplen Dashboard
 
 ## Technischer Projektablauf (Überschrift diskutieren TODO)
