@@ -11,6 +11,8 @@
  - Ausführlicheres Eingehen auf verwendete Methoden
  - Analyse/Kommentare zu Problemen
  - Anleitung für eigene Ausführung des Codes
+![BW_Metzger](https://github.com/user-attachments/assets/06ad5ad5-f2ee-4bb6-a2e9-58307aa2ffad)
+![Studentenfutter](https://github.com/user-attachments/assets/27f3e99a-da77-4775-b4f2-24f8f2b859c9)
 
 # Ideen für Aufhübschung/Bilder
  - Wordclouds
