@@ -3,6 +3,7 @@
 # Ziele des README
  - Zielsetzung: Was wollen wir vom README? Ergebnisse? Beschreibung der Methodik? Anleitung?
  - Nebenziele: Ansprechende Darstellung, (implizite) Betonung der Fähigkeiten
+![Screenshot (33)](https://github.com/user-attachments/assets/60db6cea-051f-4f54-bd8b-84d9522c297b)
 
 # Strukturierung
  - Kurzbeschreibung des Projekts
@@ -10,12 +11,15 @@
  - Ausführlicheres Eingehen auf verwendete Methoden
  - Analyse/Kommentare zu Problemen
  - Anleitung für eigene Ausführung des Codes
+![BW_Metzger](https://github.com/user-attachments/assets/06ad5ad5-f2ee-4bb6-a2e9-58307aa2ffad)
+![Studentenfutter](https://github.com/user-attachments/assets/27f3e99a-da77-4775-b4f2-24f8f2b859c9)
 
 # Ideen für Aufhübschung/Bilder
  - Wordclouds
  - Topic Clouds
  - Spurious Correlations
  - Weitere Funktionalität des Dashboards
+![gem_minis_pdf](https://github.com/user-attachments/assets/303c6f10-0180-492f-af81-9d544dd772fd)
 
 ## Kurzbeschreibung des Projekts
  Das Projekt ist ein Lernprojekt, dessen Inhalt die Wortanalyse von ca. 2700 Ausgaben des *gemeinsamen Ministerialblattes* ist. Die *gemeinsamen Ministerialblätter* sind die seit 1950 von der Bundesregierung Deutschlands herausgegebenen Verwaltungsanweisungen - diese wurden auf der Website fragdenstaat.de als .pdf veröffentlicht.
