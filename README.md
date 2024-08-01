@@ -25,8 +25,10 @@
  - Zusammenfassung der wichtigsten Themen jedes Jahres in Word Clouds (Bild TODO)
  - Ermittlung verwandter Begriffe durch Topic Modelling und Zusammenfassung verschiedener Themen in Word Clouds (Bild TODO)
  - Ermittlung der Worthäufigkeiten nach Jahr und Darstellung des Verlaufs in Diagrammen
- - Findung von 'Spurious Correlations', als zufälligerweise stark korrelierter Begriffe, die keinen kausalen Zusammenhang erkennen lassen 
+ - Finden von 'Spurious Correlations', als zufälligerweise stark korrelierter Begriffe, die keinen kausalen Zusammenhang erkennen lassen
+  - Einführung der Gulaschkannone
 ![BW_Metzger](https://github.com/user-attachments/assets/06ad5ad5-f2ee-4bb6-a2e9-58307aa2ffad)
+  - Studentenfutter
 ![Studentenfutter](https://github.com/user-attachments/assets/27f3e99a-da77-4775-b4f2-24f8f2b859c9)
  - Darstellung der Ergebnisse in einem simplen Dashboard
 
