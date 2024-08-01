@@ -10,7 +10,7 @@
  - Topic Clouds
  - Spurious Correlations
  - Weitere Funktionalität des Dashboards
-![gem_minis_pdf](https://github.com/user-attachments/assets/303c6f10-0180-492f-af81-9d544dd772fd)
+
 
 ## Kurzbeschreibung des Projekts
  Das Projekt ist ein Lernprojekt, dessen Inhalt die Wortanalyse von ca. 2700 Ausgaben des *gemeinsamen Ministerialblattes* ist. Die *gemeinsamen Ministerialblätter* sind die seit 1950 von der Bundesregierung Deutschlands herausgegebenen Verwaltungsanweisungen - diese wurden auf der Website fragdenstaat.de als .pdf veröffentlicht.
@@ -26,9 +26,10 @@
  - Ermittlung verwandter Begriffe durch Topic Modelling und Zusammenfassung verschiedener Themen in Word Clouds (Bild TODO)
  - Ermittlung der Worthäufigkeiten nach Jahr und Darstellung des Verlaufs in Diagrammen
  - Finden von 'Spurious Correlations', als zufälligerweise stark korrelierter Begriffe, die keinen kausalen Zusammenhang erkennen lassen
-  - Einführung der Gulaschkannone
+   - Einführung der Gulaschkanone
 ![BW_Metzger](https://github.com/user-attachments/assets/06ad5ad5-f2ee-4bb6-a2e9-58307aa2ffad)
-  - Studentenfutter
+   - Studentenfutter
+
 ![Studentenfutter](https://github.com/user-attachments/assets/27f3e99a-da77-4775-b4f2-24f8f2b859c9)
  - Darstellung der Ergebnisse in einem simplen Dashboard
 
@@ -46,7 +47,10 @@
    - fast richtige Wörter mit einzelnen falschen Buchstaben
    - abgeschnitte Wortfetzen
    - unsinnige Zeichenketten, auch mit untypischen Unicode-Symbolen
- - Diese Fehler sind auch in den PDFs vorhanden und sind bei der Digitalisierung der Texte entstanden. Dabei wurden unter anderem Textblöcke falsch erkannt und OCR-Fehler gemacht. (BILD TODO)
+ - Diese Fehler sind auch in den PDFs vorhanden und sind bei der Digitalisierung der Texte entstanden. Dabei wurden unter anderem Textblöcke falsch erkannt und OCR-Fehler gemacht.
+
+![gem_minis_pdf](https://github.com/user-attachments/assets/303c6f10-0180-492f-af81-9d544dd772fd)
+
  - Ab dem Jahr 2009 nimmt die Häufigkeit der OCR-Fehler ab, die Häufigkeit der falsch oder nicht erkannten Textblöcke nimmt jedoch zu und innerhalb eines Dokuments werden beispielsweise für ein und denselben Umlaut unterschiedliche Formatierungen verwendet. Der Grund dafür liegt darin, dass ab diesem Zeitpunkt das Bundesinnenministerium  digitale Versionen veröffentlicht hat und diese digital aus einzelnen Teildokumenten zusammengefügt hat. 
 
 ## Gemeinsames Ministerialblatt von www.fragdenstaat.de
