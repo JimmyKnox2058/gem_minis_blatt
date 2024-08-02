@@ -30,12 +30,13 @@ Aus den Daten haben wir mehrere quantitative Informationen erstellt und zusammen
  - Darstellung der Ergebnisse in einem simplen Dashboard, interaktiv mit Auswahl von Wörtern wie der oben gezeigten. 
 
 ## Technischer Projektablauf
- - Herunterladen der gemeinsamen Ministerialblätter im .json-Format unter Nutzung der von fragdenstaat.de bereitgestellten API (Datamining)
- - Auslesen, Filtern, Lemmatisierung und Vektorisierung der einzelnen Wörter, mittels Spacy (NLP) und multiprocessing optimiert
+ - Data Mining: Herunterladen der gemeinsamen Ministerialblätter unter Nutzung der von fragdenstaat.de bereitgestellten API 
+ - Data Preparation: Auslesen, Filtern, Lemmatisierung und Vektorisierung der einzelnen Wörter, mittels Spacy (NLP) und multiprocessing optimiert
  - Explorative Datenanalyse (EDA)
+ - Analyse der Fehler im Datensatz in einem Jupyter-Notebook.
  - Zusammenfassung der Worthäufigkeiten nach Jahren in einem Pandas-Dataframe
  - Herausfiltern 'langweiliger' Begriffe wie *Bundesregierung* mit zu hoher oder niedriger Standardabweichung. Zusammen mit der Verarbeitung durch Spacy wurden so die ursprünglich 500.000 unterschiedlichen Tokens auf 3.400 Tokens reduziert.
- - Topic Modelling mittels Latent Dirichlet Allocation
+ - Machine Learning: Topic Modelling mittels Latent Dirichlet Allocation
 
 ## Analyse und Kommentare
  - Trotz der starken, kontextvergessenden Zusammenfassung aller Wörter einer Ausgabe finden sich durch das Topic Modelling sinnvolle Themen mit verwandten Begriffen
