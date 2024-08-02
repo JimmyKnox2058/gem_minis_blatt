@@ -18,7 +18,8 @@
 - statistische Methoden und Topic Modelling
 - Darstellung der Ergebnisse mit Word Clouds, Graphen und Tabellen in einem Dashboard
 
-## Ergebnisse (Überschrift TODO)
+## Statistische Datenverarbeitung und Darstellung
+Aus den Daten haben wir mehrere quantitative Informationen erstellt und zusammengetragen:
  - Zusammenfassung der wichtigsten Themen jedes Jahres in Word Clouds
    ![topiccloud](https://github.com/user-attachments/assets/31ae06e4-55d5-4f71-916c-33f2ccd2d593)
 
@@ -34,9 +35,10 @@
  - Darstellung der Ergebnisse in einem simplen Dashboard
    - interaktiv mit Auswahl von Wörtern wie die oben gezeigten. 
 
-## Technischer Projektablauf (Überschrift diskutieren TODO)
- - Herunterladen der gemeinsamen Ministerialblätter im .json-Format unter Nutzung der von fragdenstaat.de bereitgestellten API 
+## Technischer Projektablauf
+ - Herunterladen der gemeinsamen Ministerialblätter im .json-Format unter Nutzung der von fragdenstaat.de bereitgestellten API (Datamining)
  - Auslesen, Filtern, Lemmatisierung und Vektorisierung der einzelnen Wörter, mittels Spacy (NLP) und multiprocessing optimiert
+ - Explorative Datenanalyse (EDA)
  - Zusammenfassung der so erhaltenen Worthäufigkeiten nach Jahren in einem Pandas-Dataframe
  - Herausfiltern 'langweiliger' Begriffe wie *Bundesregierung* mit zu hoher oder niedriger Standardabweichung. Zusammen mit der Verarbeitung durch Spacy wurden so die ursprünglich 500.000 unterschiedlichen Tokens auf 3.400 Tokens reduziert.
  - Topic Modelling mittels Latent Dirichlet Allocation
@@ -55,11 +57,18 @@
  - Ab dem Jahr 2009 nimmt die Häufigkeit der OCR-Fehler ab, die Häufigkeit der falsch oder nicht erkannten Textblöcke nimmt jedoch zu und innerhalb eines Dokuments werden beispielsweise für ein und denselben Umlaut unterschiedliche Formatierungen verwendet. Der Grund dafür liegt darin, dass ab diesem Zeitpunkt das Bundesinnenministerium  digitale Versionen veröffentlicht hat und diese digital aus einzelnen Teildokumenten zusammengefügt hat. 
 
 ## Anleitung
-Im Hauptordner liegen vier Skripte zur eigenen Durchführung des Projekts:
- - homeDash.py : Dieses Programm erzeugt ein interaktives Dashboard mit den Ergebnissen des Projekts, das unter [127.0.0.1:8050](http://127.0.0.1:8050/) mithilfe eines Browsers abrufbar ist. Die Word Clouds sind aus Speicherplatzgründen nur exemplarisch vorhanden, können aber mithilfe der restlichen Skripte vollständig erzeugt werden.
- - init_download.py : Dieses Skript lädt die Rohdaten, also die gemeinsamen Ministerialblätter, als .json von [www.fragdenstaat.de](https://fragdenstaat.de/) herunter.
- - init_pickleing.py : Dieses Skript verarbeite die Rohdaten, erzeugt die verwendeten Statistiken und Word Clouds und speichert diese als .pickle ab.
- - init_comp_pdf.py : 
+### Verwendung des Dashboards
+Das Repository herunterladen, die requirements.txt installieren und homeDash.py ausführen.
+ - homeDash.py : Dieses Programm erzeugt ein interaktives Dashboard mit den Ergebnissen des Projekts, das unter 127.0.0.1:8050 mithilfe eines Browsers abrufbar ist. Die Word Clouds sind aus Speicherplatzgründen nur exemplarisch vorhanden, können aber mithilfe der restlichen Skripte vollständig erzeugt werden.
+
+### Erzeugung vollständiger Daten
+Um das komplette Projekt im Detail, mit den vollständigen Daten, durchzuführen, sind folgende Schritte nötig:
+Im Hauptordner liegen drei Skripte zur eigenen Durchführung des Projekts:
+ - init_download.py : Dieses Skript lädt die Rohdaten, also die gemeinsamen Ministerialblätter, von [www.fragdenstaat.de](https://fragdenstaat.de/) herunter. Hinweis: Datamining, um Serversperren vorzubeugen, läd dieses Skript die Daten langsam runter. (mehrere Stunden) 
+ - init_pickleing.py : Dieses Skript verarbeite die Rohdaten, erzeugt die verwendeten Statistiken und Word Clouds und speichert diese als .pickle ab. (Rechenleistung intensiv, benutzt Multiprocessing)
+ - init_comp_pdf.py : Dieses Skript bereitet weiter Fehleranalysen vor, die nicht für die homeDash.py benötigt werden. (Rechenleistung intensiv, benutzt Multiprocessing)
+#### Geschafft!
+Jetzt hat das Dashboard, alle Funktionen und auch die Analysen aus dem compare_pdf.ipynb funktionieren nachvollziehbar.
 
 ## Gemeinsames Ministerialblatt von www.fragdenstaat.de
 ### Vorwort
