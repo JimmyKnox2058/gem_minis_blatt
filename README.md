@@ -4,7 +4,7 @@
  
   ![Screenshot (33)](https://github.com/user-attachments/assets/60db6cea-051f-4f54-bd8b-84d9522c297b) 
             
- Teilaspekte, mit denen wir uns auseinandergesetzt haben, sind:
+ Aspekte, mit denen wir uns in dem Projekt auseinandergesetzt haben, sind:
 - Beschaffung, Bereinigung und Verarbeitung der Textdaten
 - Natural Language Processing
 - statistische Methoden und Topic Modelling
