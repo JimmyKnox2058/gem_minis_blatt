@@ -6,9 +6,6 @@
  - Anleitung für eigene Ausführung des Codes
    
 # Ideen für Aufhübschung/Bilder
- - Wordclouds
- - Topic Clouds
- - Spurious Correlations
  - Weitere Funktionalität des Dashboards
 
 
@@ -22,8 +19,12 @@
 - Darstellung der Ergebnisse mit Word Clouds, Graphen und Tabellen in einem Dashboard
 
 ## Ergebnisse (Überschrift TODO)
- - Zusammenfassung der wichtigsten Themen jedes Jahres in Word Clouds (Bild TODO)
- - Ermittlung verwandter Begriffe durch Topic Modelling und Zusammenfassung verschiedener Themen in Word Clouds (Bild TODO)
+ - Zusammenfassung der wichtigsten Themen jedes Jahres in Word Clouds
+   ![topiccloud](https://github.com/user-attachments/assets/31ae06e4-55d5-4f71-916c-33f2ccd2d593)
+
+ - Ermittlung verwandter Begriffe durch Topic Modelling und Zusammenfassung verschiedener Themen in Word Clouds (Bsp: 1950)
+   ![worldcloud1950](https://github.com/user-attachments/assets/7a32cc98-e0a7-4ab4-97ae-b5f7a02239fc)
+
  - Ermittlung der Worthäufigkeiten nach Jahr und Darstellung des Verlaufs in Diagrammen
  - Finden von 'Spurious Correlations', als zufälligerweise stark korrelierter Begriffe, die keinen kausalen Zusammenhang erkennen lassen
    - Einführung der Gulaschkanone
@@ -31,10 +32,11 @@
    - Studentenfutter
 ![Studentenfutter](https://github.com/user-attachments/assets/27f3e99a-da77-4775-b4f2-24f8f2b859c9)
  - Darstellung der Ergebnisse in einem simplen Dashboard
+   - interaktiv mit Auswahl von Wörtern wie die oben gezeigten. 
 
 ## Technischer Projektablauf (Überschrift diskutieren TODO)
  - Herunterladen der gemeinsamen Ministerialblätter im .json-Format unter Nutzung der von fragdenstaat.de bereitgestellten API 
- - Parallelisiertes? Auslesen, Filtern, Lemmatisierung und Vektorisierung der einzelnen Wörter mittels Spacy
+ - Auslesen, Filtern, Lemmatisierung und Vektorisierung der einzelnen Wörter, mittels Spacy (NLP) und multiprocessing optimiert
  - Zusammenfassung der so erhaltenen Worthäufigkeiten nach Jahren in einem Pandas-Dataframe
  - Herausfiltern 'langweiliger' Begriffe wie *Bundesregierung* mit zu hoher oder niedriger Standardabweichung. Zusammen mit der Verarbeitung durch Spacy wurden so die ursprünglich 500.000 unterschiedlichen Tokens auf 3.400 Tokens reduziert.
  - Topic Modelling mittels Latent Dirichlet Allocation
@@ -43,8 +45,8 @@
  - Trotz der starken, kontextvergessenden Zusammenfassung aller Wörter einer Ausgabe finden sich durch das Topic Modelling sinnvolle Themen mit verwandten Begriffen
  - Die Lemmatisierung mittels Spacy funktioniert nur bedingt. Das liegt insbesondere an der speziellen Beamtensprache, auf die die von Spacy bereitgestellten NLP-Modelle nicht trainiert sind. Auch werden Wortarten falsch erkannt.
  - Bei der Betrachtung der Daten haben wir festgestellt, dass die Qualität der Textdaten Mängel aufweist. Dazu gehören unter anderem:
-   - fast richtige Wörter mit einzelnen falschen Buchstaben
-   - abgeschnitte Wortfetzen
+   - Wörter mit mehr als 10 verschiedenen "schreibweisen" wegen ORC-Fehlern
+   - abgeschnitte Wortfetzen (Zeilenumbrüche)
    - unsinnige Zeichenketten, auch mit untypischen Unicode-Symbolen
  - Diese Fehler sind auch in den PDFs vorhanden und sind bei der Digitalisierung der Texte entstanden. Dabei wurden unter anderem Textblöcke falsch erkannt und OCR-Fehler gemacht.
 
