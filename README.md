@@ -41,8 +41,8 @@ Aus den Daten haben wir mehrere quantitative Informationen erstellt und zusammen
  - Trotz der starken, kontextvergessenden Zusammenfassung aller Wörter einer Ausgabe finden sich durch das Topic Modelling sinnvolle Themen mit verwandten Begriffen
  - Die Lemmatisierung mittels Spacy funktioniert nur bedingt. Das liegt insbesondere an der speziellen Beamtensprache, auf die die von Spacy bereitgestellten NLP-Modelle nicht trainiert sind. Auch werden Wortarten falsch erkannt.
  - Bei der Betrachtung der Daten haben wir festgestellt, dass die Qualität der Textdaten Mängel aufweist, die bei der Digitalisierung der Texte entstanden sind. Dazu gehören unter anderem:
-   - Wörter mit mehr als 10 verschiedenen "Schreibweisen" aufgrund von ORC-Fehlern
-   - abgeschnitte Wortfetzen aufgrund von Zeilenumbrüchen
+   - Wörter mit mehr als 10 verschiedenen "Schreibweisen" aufgrund von OCR-Fehlern
+   - abgeschnittene Wortfetzen aufgrund von Zeilenumbrüchen
    - unsinnige Zeichenketten, auch mit untypischen Unicode-Symbolen
 
    ![gem_minis_pdf](https://github.com/user-attachments/assets/303c6f10-0180-492f-af81-9d544dd772fd)
