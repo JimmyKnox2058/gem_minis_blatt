@@ -10,7 +10,7 @@
 
 
 ## Kurzbeschreibung des Projekts
- Das Projekt ist ein Lernprojekt, dessen Inhalt die Wortanalyse von ca. 2700 Ausgaben des *gemeinsamen Ministerialblattes* ist. Die *gemeinsamen Ministerialblätter* sind die seit 1950 von der Bundesregierung Deutschlands herausgegebenen Verwaltungsanweisungen - diese wurden auf der Website fragdenstaat.de als .pdf veröffentlicht.
+ Das Projekt ist ein Lernprojekt von [Michael Heinrich](https://github.com/JimmyKnox2058) und [Thomas Voss](https://github.com/Thomas-Voss), dessen Inhalt die Wortanalyse von ca. 2700 Ausgaben des *gemeinsamen Ministerialblattes* ist. Die *gemeinsamen Ministerialblätter* sind die seit 1950 von der Bundesregierung Deutschlands herausgegebenen Verwaltungsanweisungen - diese wurden auf der Website fragdenstaat.de als .pdf veröffentlicht.
 
  Teilaspekte, mit denen wir uns auseinandergesetzt haben, sind:
 - Beschaffung, Bereinigung und Verarbeitung der Textdaten
@@ -53,6 +53,13 @@
 ![gem_minis_pdf](https://github.com/user-attachments/assets/303c6f10-0180-492f-af81-9d544dd772fd)
 
  - Ab dem Jahr 2009 nimmt die Häufigkeit der OCR-Fehler ab, die Häufigkeit der falsch oder nicht erkannten Textblöcke nimmt jedoch zu und innerhalb eines Dokuments werden beispielsweise für ein und denselben Umlaut unterschiedliche Formatierungen verwendet. Der Grund dafür liegt darin, dass ab diesem Zeitpunkt das Bundesinnenministerium  digitale Versionen veröffentlicht hat und diese digital aus einzelnen Teildokumenten zusammengefügt hat. 
+
+## Anleitung
+Im Hauptordner liegen vier Skripte zur eigenen Durchführung des Projekts:
+ - homeDash.py : Dieses Programm erzeugt ein interaktives Dashboard mit den Ergebnissen des Projekts, das unter [127.0.0.1:8050](http://127.0.0.1:8050/) mithilfe eines Browsers abrufbar ist. Die Word Clouds sind aus Speicherplatzgründen nur exemplarisch vorhanden, können aber mithilfe der restlichen Skripte vollständig erzeugt werden.
+ - init_download.py : Dieses Skript lädt die Rohdaten, also die gemeinsamen Ministerialblätter, als .json von [www.fragdenstaat.de](https://fragdenstaat.de/) herunter.
+ - init_pickleing.py : Dieses Skript verarbeite die Rohdaten, erzeugt die verwendeten Statistiken und Word Clouds und speichert diese als .pickle ab.
+ - init_comp_pdf.py : 
 
 ## Gemeinsames Ministerialblatt von www.fragdenstaat.de
 ### Vorwort
