@@ -31,7 +31,7 @@ Aus den Daten haben wir mehrere quantitative Informationen erstellt und zusammen
 
 ## Technischer Projektablauf
  - Data Mining: Herunterladen der gemeinsamen Ministerialblätter unter Nutzung der von fragdenstaat.de bereitgestellten API 
- - Data Preparation: Auslesen, Filtern, Lemmatisierung und Vektorisierung der einzelnen Wörter, mittels Spacy (NLP) und multiprocessing optimiert
+ - Data Preparation: Auslesen, Filtern, Lemmatisierung und Vektorisierung der einzelnen Wörter, mittels Spacy (NLP) und für Multiprocessing optimiert
  - Explorative Datenanalyse (EDA)
  - Analyse der Fehler im Datensatz in einem Jupyter-Notebook.
  - Zusammenfassung der Worthäufigkeiten nach Jahren in einem Pandas-Dataframe
@@ -60,7 +60,7 @@ Im Hauptordner liegt das Jupyter-Notebook compare_pdf.ipynb, das die Fehler in d
 ### Vervollständigung der Daten
 Um die volle Funktionalität des Dashboards herzustellen und die Fehleranalyse zu reproduzieren, müssen die Rohdaten heruntergeladen und verarbeitet werden. Hierzu liegen im Hauptordner die drei folgenden Skripte:
  - init_download.py : Dieses Skript lädt die Rohdaten, also die gemeinsamen Ministerialblätter, von [www.fragdenstaat.de](https://fragdenstaat.de/) herunter. Hinweis: Datamining, um Serversperren vorzubeugen, läd dieses Skript die Daten langsam runter. (mehrere Stunden) 
- - init_pickleing.py : Dieses Skript verarbeite die Rohdaten, erzeugt die verwendeten Statistiken und Word Clouds und speichert diese als .pickle ab. (Rechenleistungsintensiv, benutzt Multiprocessing)
- - init_comp_pdf.py : Dieses Skript bereitet weiter Fehleranalysen vor, die nicht für die homeDash.py benötigt werden. (Rechenleistungsintensiv, benutzt Multiprocessing)
+ - init_pickleing.py : Dieses Skript verarbeitet die Rohdaten, erzeugt die verwendeten Statistiken und Word Clouds und speichert diese als .pickle ab. (Rechenleistungsintensiv, benutzt Multiprocessing)
+ - init_comp_pdf.py : Dieses Skript bereitet die weiteren Fehleranalysen im Jupyter-Notebook vor, die nicht für die homeDash.py benötigt werden. (Rechenleistungsintensiv, benutzt Multiprocessing)
 #### Geschafft!
-Jetzt hat das Dashboard, alle Funktionen und auch die Analysen aus dem compare_pdf.ipynb funktionieren nachvollziehbar.
+Jetzt hat das Dashboard alle Funktionen und auch die Analysen aus dem compare_pdf.ipynb funktionieren nachvollziehbar.
