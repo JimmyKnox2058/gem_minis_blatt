@@ -12,13 +12,13 @@
 
 ## Statistische Datenverarbeitung und Darstellung
 Aus den Daten haben wir mehrere quantitative Informationen erstellt und zusammengetragen:
- - Zusammenfassung der wichtigsten Themen jedes Jahres in Word Clouds
-   
-   ![topiccloud](https://github.com/user-attachments/assets/31ae06e4-55d5-4f71-916c-33f2ccd2d593)
-
- - Ermittlung verwandter Begriffe durch Topic Modelling und Zusammenfassung verschiedener Themen in Word Clouds (Bsp: 1950)
+ - Zusammenfassung der wichtigsten Themen jedes Jahres in Word Clouds (Bsp: 1950)
    
    ![worldcloud1950](https://github.com/user-attachments/assets/7a32cc98-e0a7-4ab4-97ae-b5f7a02239fc)
+   
+ - Ermittlung verwandter Begriffe durch Topic Modelling und Zusammenfassung verschiedener Themen in Word Clouds 
+
+   ![topiccloud](https://github.com/user-attachments/assets/31ae06e4-55d5-4f71-916c-33f2ccd2d593)
 
  - Ermittlung der Worthäufigkeiten nach Jahr und Darstellung des Verlaufs in Diagrammen
  - Finden von 'Spurious Correlations', als zufälligerweise stark korrelierter Begriffe, die keinen kausalen Zusammenhang erkennen lassen:
