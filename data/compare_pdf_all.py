@@ -15,8 +15,11 @@ import time
 tic=time.perf_counter()
 
 """
-WORK IN PROGRESS!!!
-  vergleiche PDF mit Text und suche PDF Fehler.
+    Vergleicht PDF mit Text und suche PDF Fehler.
+    Text der geladenen json Dateien wird mit dem von der PDF ausgelesenen Text verglichen.
+    Dabei wird der Text in kurze Stücke geteilt, Leerzeichen entfernt und eine "in" Abfrage gemacht.
+    Wenn die Abfrage True ergibt, wird True in Liste eintragen. Wenn False, wird der Text in Liste eintragen.
+    Das heißt: Text == False und Fehler kann untersucht werden.
 """
 
 def convert_pages_to_dict(data):
@@ -52,6 +55,10 @@ def PDF_compare_result(dummy_tuple):
     return list(result)
 
 def apply_dummy_func(df):
+    """
+    Funktion wird benötigt für Multiprocessing.
+    Damit Pool() children erzeugen kann.
+    """
     return df.apply(PDF_compare_result)
 
 def main(json_path = "./data/data/", pickle_path = "./data/pickle_jar/"):
